@@ -5,19 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Евгений Петрачук — ипотечный и страховой брокер</title>
-  <meta name="description" content="Помогаю подобрать ипотечную программу, пройти путь от заявки до сделки и оформить ипотечное страхование. Консультации по ипотеке и страхованию.">
+  <meta name="description" content="Помогаю выгодно купить недвижимость, снизить ставку и сэкономить на страховке и досрочном погашении. Ипотека под ключ, страхование, аудит кредитной истории.">
   <meta name="theme-color" content="#070d18">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Евгений Петрачук — ипотечный и страховой брокер">
-  <meta property="og:description" content="Ипотека и страхование: подбор программы, сопровождение сделки и оформление полиса.">
+  <meta property="og:description" content="Одобрение ипотеки и экономия на переплатах: подбор программы, страхование и стратегия досрочного погашения.">
   <meta property="og:locale" content="ru_RU">
 
   <!-- Шрифт с graceful fallback на системный стек -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    .contacts__form {
+      position: relative;
+      z-index: 1;
+      grid-column: 1 / -1;
+      width: 100%;
+      margin-top: 8px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .contacts__form h3 {
+      margin: 0 0 8px;
+      color: #fff;
+      font-size: clamp(1.35rem, 3vw, 1.8rem);
+    }
+    .contacts__form > p {
+      margin: 0 0 20px;
+      color: rgba(255, 255, 255, 0.72);
+    }
+    .contacts__form-frame {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 14px;
+      background: #fff;
+    }
+    .contacts__form-frame iframe {
+      display: block;
+      width: 100%;
+      min-height: 850px;
+      border: 0;
+      background: #fff;
+    }
+    @media (max-width: 600px) {
+      .contacts__form { margin-top: 28px; padding-top: 24px; }
+      .contacts__form-frame iframe { min-height: 900px; }
+    }
+  </style>
 
   <link rel="stylesheet" href="style.css">
 
@@ -67,12 +107,12 @@
           </p>
 
           <h1 id="hero-title">
-            Ипотека и страхование <span class="text-accent">без лишней сложности</span>
+            Одобрение ипотеки и <span class="text-accent">экономия на переплатах</span>
           </h1>
 
           <p class="hero__lead">
-            Помогаю разобраться в ипотечных программах, подобрать подходящий вариант,
-            подготовить документы и пройти путь до сделки. Оформляю ипотечное страхование.
+            Помогаю выгодно купить недвижимость, снизить ставку и сэкономить
+            до сотен тысяч рублей на страховке и досрочном погашении.
           </p>
 
           <div class="hero__actions">
@@ -86,14 +126,19 @@
             <a class="btn btn--ghost btn--lg" href="#services">Смотреть услуги</a>
           </div>
 
+          <!-- Замените показатели на свои реальные данные -->
           <dl class="stats">
             <div class="stat">
               <dt>Опыт</dt>
-              <dd>5 лет</dd>
+              <dd>8 лет</dd>
             </div>
             <div class="stat">
               <dt>Сделок</dt>
-              <dd>200+</dd>
+              <dd>300+</dd>
+            </div>
+            <div class="stat">
+              <dt>Экономия до</dt>
+              <dd>500 тыс. ₽</dd>
             </div>
           </dl>
         </div>
@@ -170,10 +215,10 @@
       <div class="container">
         <header class="section__head reveal">
           <p class="eyebrow">Обо мне</p>
-          <h2 id="about-title">Помогаю пройти путь к вашей недвижимости</h2>
+          <h2 id="about-title">Беру на себя сложное — вы получаете результат</h2>
           <p class="section__lead">
-            Пять лет помогаю клиентам решать вопросы с ипотекой и страхованием. Объясняю условия
-            простым языком, сравниваю варианты и сопровождаю на каждом важном этапе.
+            Сопровождаю сделку от первой консультации до ключей: помогаю выбрать банк,
+            подготовить документы и не переплатить.
           </p>
         </header>
 
@@ -251,7 +296,7 @@
       <div class="container">
         <header class="section__head reveal">
           <p class="eyebrow">Услуги</p>
-          <h2 id="services-title">Ипотека и страхование: чем могу помочь</h2>
+          <h2 id="services-title">Где взять, как сэкономить и как не переплатить</h2>
           <p class="section__lead">
             Каждая услуга — с понятным планом действий и прозрачными условиями.
           </p>
@@ -302,12 +347,12 @@
             </div>
 
             <h3>Ипотечное страхование</h3>
-            <p>Подберу подходящий вариант ипотечного страхования с учётом требований вашего банка.</p>
+            <p>Оформлю полис дешевле, чем предлагает банк, без потери покрытия.</p>
 
             <ul class="card__list">
               <li>Сравнение страховых компаний</li>
               <li>Полис, который принимает банк</li>
-              <li>Проверка соответствия требованиям банка</li>
+              <li>Экономия без лишних рисков</li>
             </ul>
 
             <a class="card__link" href="#contacts">
@@ -332,12 +377,12 @@
             </div>
 
             <h3>Аудит и досрочное погашение</h3>
-            <p>Разберу условия действующей ипотеки и помогу оценить варианты досрочного погашения.</p>
+            <p>Посчитаю, как быстрее закрыть кредит и сократить переплату.</p>
 
             <ul class="card__list">
-              <li>Анализ условий действующей ипотеки</li>
+              <li>Ревизия действующей ипотеки</li>
               <li>Стратегия досрочных погашений</li>
-              <li>Сравнение вариантов погашения</li>
+              <li>Пересчёт графика и выгоды</li>
             </ul>
 
             <a class="card__link" href="#contacts">
@@ -360,43 +405,12 @@
             <p class="eyebrow">Контакты</p>
             <h2 id="contacts-title">Обсудим вашу ситуацию</h2>
             <p class="section__lead">
-              Расскажите, что у вас за задача. Я свяжусь с вами, уточню детали и подскажу,
-              с чего лучше начать. Первичная консультация бесплатная.
+              Расскажите о задаче — предложу решение и честно скажу, чем могу помочь.
+              Первая консультация бесплатная.
             </p>
           </div>
 
-          <div class="contacts__right">
-            <form class="contact-form" id="contact-form">
-              <label class="form-field">
-                <span>Как к вам обращаться</span>
-                <input type="text" name="name" autocomplete="name" placeholder="Ваше имя" required>
-              </label>
-              <label class="form-field">
-                <span>Номер телефона</span>
-                <input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required>
-              </label>
-              <label class="form-field">
-                <span>Чем могу помочь?</span>
-                <select name="service" required>
-                  <option value="" selected disabled>Выберите услугу</option>
-                  <option>Подбор и оформление ипотеки</option>
-                  <option>Ипотечное страхование</option>
-                  <option>Аудит действующей ипотеки</option>
-                  <option>Другой вопрос</option>
-                </select>
-              </label>
-              <label class="form-field">
-                <span>Комментарий <small>(необязательно)</small></span>
-                <textarea name="comment" rows="3" placeholder="Коротко опишите вашу ситуацию"></textarea>
-              </label>
-              <button class="btn btn--primary btn--lg contact-form__submit" type="submit">
-                Отправить заявку в Telegram
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-              </button>
-              <p class="form-note">После нажатия откроется Telegram с подготовленным сообщением. Проверьте его и нажмите «Отправить».</p>
-            </form>
-
-            <div class="contacts__actions">
+          <div class="contacts__actions">
             <!-- Замените ссылки и номер телефона на свои -->
             <a class="btn btn--social" href="https://t.me/evgeniy_pet" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -427,6 +441,21 @@
               <span>+7 (961) 207-07-63</span>
               <span class="btn__meta">Позвонить</span>
             </a>
+          </div>
+
+          <div class="contacts__form" aria-labelledby="contacts-form-title">
+            <h3 id="contacts-form-title">Оставить заявку</h3>
+            <p>Заполните короткую форму, и я свяжусь с вами.</p>
+            <div class="contacts__form-frame">
+              <script src="https://forms.yandex.ru/_static/embed.js"></script>
+              <iframe
+                src="https://forms.yandex.ru/u/6ae4641b49af47ac04cfc3b6?iframe=1"
+                frameborder="0"
+                name="ya-form-6ae4641b49af47ac04cfc3b6"
+                width="100%"
+                height="850"
+                title="Заявка на консультацию">
+              </iframe>
             </div>
           </div>
         </div>
@@ -508,27 +537,6 @@
       } else {
         // Фолбэк: показываем всё сразу
         reveals.forEach(function (el) { el.classList.add('is-visible'); });
-      }
-
-      /* ---------- Заявка: формируем сообщение для Telegram ---------- */
-      var contactForm = document.getElementById('contact-form');
-      if (contactForm) {
-        contactForm.addEventListener('submit', function (event) {
-          event.preventDefault();
-          if (!contactForm.reportValidity()) return;
-
-          var data = new FormData(contactForm);
-          var message = [
-            'Здравствуйте! Хочу обратиться по вопросу:',
-            'Имя: ' + data.get('name'),
-            'Телефон: ' + data.get('phone'),
-            'Услуга: ' + data.get('service'),
-            data.get('comment') ? 'Комментарий: ' + data.get('comment') : ''
-          ].filter(Boolean).join('\n');
-
-          var telegramUrl = 'https://t.me/evgeniy_pet?text=' + encodeURIComponent(message);
-          window.open(telegramUrl, '_blank', 'noopener,noreferrer');
-        });
       }
 
       /* ---------- Актуальный год в футере ---------- */
