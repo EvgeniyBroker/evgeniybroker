@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Евгений Петрачук — ипотечный и страховой брокер</title>
+  <meta name="description" content="Помогаю выгодно купить недвижимость, снизить ставку и сэкономить на страховке и досрочном погашении. Ипотека под ключ, страхование, аудит кредитной истории.">
+  <meta name="theme-color" content="#070d18">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Евгений Петрачук — ипотечный и страховой брокер">
+  <meta property="og:description" content="Одобрение ипотеки и экономия на переплатах: подбор программы, страхование и стратегия досрочного погашения.">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Шрифт с graceful fallback на системный стек -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Класс js включает анимации появления (без JS контент остаётся видимым) -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ======================= ХЕДЕР ======================= -->
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Евгений Петрачук — на главную">
+        <span class="logo__mark" aria-hidden="true">ЕП</span>
+        <span class="logo__text">
+          <strong>Евгений Петрачук</strong>
+          <span>Ипотечный брокер</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">Обо мне</a></li>
+          <li><a class="nav__link" href="#services">Услуги</a></li>
+          <li><a class="nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="#contacts">Быстрая связь</a>
+      </nav>
+
+      <button class="burger" type="button" aria-label="Открыть меню"
+              aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ======================= ГЛАВНЫЙ ЭКРАН ======================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="eyebrow">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            Ипотечный и страховой брокер
+          </p>
+
+          <h1 id="hero-title">
+            Одобрение ипотеки и <span class="text-accent">экономия на переплатах</span>
+          </h1>
+
+          <p class="hero__lead">
+            Помогаю выгодно купить недвижимость, снизить ставку и сэкономить
+            до сотен тысяч рублей на страховке и досрочном погашении.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#contacts">
+              Получить консультацию
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>
+              </svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#services">Смотреть услуги</a>
+          </div>
+
+          <!-- Замените показатели на свои реальные данные -->
+          <dl class="stats">
+            <div class="stat">
+              <dt>Опыт</dt>
+              <dd>8 лет</dd>
+            </div>
+            <div class="stat">
+              <dt>Сделок</dt>
+              <dd>300+</dd>
+            </div>
+            <div class="stat">
+              <dt>Экономия до</dt>
+              <dd>500 тыс. ₽</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Декоративная карточка-визитка -->
+        <aside class="hero__card reveal" aria-label="Что входит в работу">
+          <div class="hero__author">
+            <div class="hero__avatar-wrap">
+              <img src="avatar.png" alt="Евгений Петрачук" class="hero__avatar">
+              <div class="hero__avatar-badge">Онлайн</div>
+            </div>
+            <div class="hero__author-info">
+              <strong>Евгений Петрачук</strong>
+              <span>Ваш эксперт по ипотеке и страхованию</span>
+            </div>
+          </div>
+          <div class="hero-card__top">
+            <span class="hero-card__label">Подбор ипотеки</span>
+            <span class="pill">Бесплатно</span>
+          </div>
+
+          <ul class="hero-card__list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m5 12 4 4L19 6"/>
+              </svg>
+              Новостройки, вторичка и льготные программы
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m5 12 4 4L19 6"/>
+              </svg>
+              Работа с ИП и самозанятыми
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m5 12 4 4L19 6"/>
+              </svg>
+              Страхование выгоднее, чем в банке
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m5 12 4 4L19 6"/>
+              </svg>
+              Аудит кредитной истории и стратегия
+            </li>
+          </ul>
+
+          <div class="hero-card__divider" aria-hidden="true"></div>
+
+          <div class="hero-card__foot">
+            <div>
+              <span class="hero-card__small">Первая консультация</span>
+              <strong>0 ₽</strong>
+            </div>
+            <a class="hero-card__link" href="#contacts">
+              Оставить заявку
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>
+              </svg>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ======================= ОБО МНЕ ======================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Обо мне</p>
+          <h2 id="about-title">Беру на себя сложное — вы получаете результат</h2>
+          <p class="section__lead">
+            Сопровождаю сделку от первой консультации до ключей: помогаю выбрать банк,
+            подготовить документы и не переплатить.
+          </p>
+        </header>
+
+        <div class="cards cards--about">
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="m16 11 2 2 4-4"/>
+              </svg>
+            </span>
+            <h3>Сложные случаи</h3>
+            <p>
+              ИП, самозанятые, неофициальный доход и отказ банка — разбираю ситуацию
+              и подбираю рабочий сценарий.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21h18"/>
+                <path d="M5 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/>
+                <path d="M15 9h2a2 2 0 0 1 2 2v10"/>
+                <path d="M9 7h2M9 11h2M9 15h2"/>
+              </svg>
+            </span>
+            <h3>Партнёрство с банками</h3>
+            <p>
+              Работаю с топ-банками и застройщиками: доступ к программам и условия,
+              которых нет на витрине.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <rect x="8" y="2" width="8" height="4" rx="1"/>
+                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                <path d="m9 14 2 2 4-4"/>
+              </svg>
+            </span>
+            <h3>Аудит кредитной истории</h3>
+            <p>
+              Проверяю историю и кредитную нагрузку, исправляю ошибки и готовлю
+              профиль к одобрению.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="2" width="16" height="20" rx="2"/>
+                <path d="M8 6h8"/>
+                <path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/>
+              </svg>
+            </span>
+            <h3>Расчёт стратегии</h3>
+            <p>
+              Сравниваю программы и считаю переплату — с учётом досрочного погашения
+              и страхования.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= УСЛУГИ ======================= -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Услуги</p>
+          <h2 id="services-title">Где взять, как сэкономить и как не переплатить</h2>
+          <p class="section__lead">
+            Каждая услуга — с понятным планом действий и прозрачными условиями.
+          </p>
+        </header>
+
+        <div class="cards cards--services">
+          <article class="card card--service card--featured reveal">
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                     stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m3 10 9-7 9 7"/>
+                  <path d="M5 9v11h14V9"/>
+                  <path d="M9 20v-6h6v6"/>
+                </svg>
+              </span>
+              <span class="card__num" aria-hidden="true">01</span>
+            </div>
+
+            <h3>Ипотека под ключ</h3>
+            <p>Подберу банк и программу под вашу ситуацию и проведу сделку до ключей.</p>
+
+            <ul class="card__list">
+              <li>Новостройки и вторичное жильё</li>
+              <li>Льготные и семейные программы</li>
+              <li>Полное сопровождение сделки</li>
+            </ul>
+
+            <a class="card__link" href="#contacts">
+              Обсудить задачу
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="card card--service reveal">
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                     stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </span>
+              <span class="card__num" aria-hidden="true">02</span>
+            </div>
+
+            <h3>Ипотечное страхование</h3>
+            <p>Оформлю полис дешевле, чем предлагает банк, без потери покрытия.</p>
+
+            <ul class="card__list">
+              <li>Сравнение страховых компаний</li>
+              <li>Полис, который принимает банк</li>
+              <li>Экономия без лишних рисков</li>
+            </ul>
+
+            <a class="card__link" href="#contacts">
+              Обсудить задачу
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="card card--service reveal">
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                     stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 3v18h18"/>
+                  <path d="m7 15 4-4 3 3 5-6"/>
+                </svg>
+              </span>
+              <span class="card__num" aria-hidden="true">03</span>
+            </div>
+
+            <h3>Аудит и досрочное погашение</h3>
+            <p>Посчитаю, как быстрее закрыть кредит и сократить переплату.</p>
+
+            <ul class="card__list">
+              <li>Ревизия действующей ипотеки</li>
+              <li>Стратегия досрочных погашений</li>
+              <li>Пересчёт графика и выгоды</li>
+            </ul>
+
+            <a class="card__link" href="#contacts">
+              Обсудить задачу
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= КОНТАКТЫ ======================= -->
+    <section class="section contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+        <div class="contacts__panel reveal">
+          <div class="contacts__text">
+            <p class="eyebrow">Контакты</p>
+            <h2 id="contacts-title">Обсудим вашу ситуацию</h2>
+            <p class="section__lead">
+              Расскажите о задаче — предложу решение и честно скажу, чем могу помочь.
+              Первая консультация бесплатная.
+            </p>
+          </div>
+
+          <div class="contacts__actions">
+            <!-- Замените ссылки и номер телефона на свои -->
+            <a class="btn btn--social" href="https://t.me/evgeniy_pet" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m22 2-7 20-4-9-9-4Z"/>
+                <path d="M22 2 11 13"/>
+              </svg>
+              <span>Telegram</span>
+              <span class="btn__meta">Написать</span>
+            </a>
+
+            <a class="btn btn--social btn--max" href="https://max.ru/u/f9LHodD0cOJexV5w10h-bCS7CZz2kwIzhlbNsQfVWd71WcmRr0SvsqRKcxM" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+              <span>Макс</span>
+              <span class="btn__meta">Написать</span>
+            </a>
+
+            <a class="btn btn--social" href="tel:+79612070763">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/>
+              </svg>
+              <span>+7 (961) 207-07-63</span>
+              <span class="btn__meta">Позвонить</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= ФУТЕР ======================= -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">
+        © <span id="year">2026</span> Евгений Петрачук. Ипотечный и страховой брокер.
+      </p>
+
+      <nav class="footer__links" aria-label="Навигация в подвале">
+        <a href="#about">Обо мне</a>
+        <a href="#services">Услуги</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#top">Наверх ↑</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      var header = document.querySelector('.site-header');
+      var burger = document.querySelector('.burger');
+      var nav = document.getElementById('nav');
+
+      /* ---------- Мобильное меню ---------- */
+      function setMenu(open) {
+        burger.setAttribute('aria-expanded', String(open));
+        burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+        nav.classList.toggle('is-open', open);
+      }
+
+      burger.addEventListener('click', function () {
+        setMenu(burger.getAttribute('aria-expanded') !== 'true');
+      });
+
+      // Закрываем меню после клика по ссылке
+      nav.addEventListener('click', function (event) {
+        if (event.target.closest('a')) setMenu(false);
+      });
+
+      // Escape и ресайз до десктопа
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') setMenu(false);
+      });
+
+      window.addEventListener('resize', function () {
+        if (window.innerWidth >= 900) setMenu(false);
+      });
+
+      /* ---------- Тень хедера при скролле ---------- */
+      function onScroll() {
+        header.classList.toggle('is-scrolled', window.scrollY > 8);
+      }
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      /* ---------- Появление блоков при скролле ---------- */
+      var reveals = document.querySelectorAll('.reveal');
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if ('IntersectionObserver' in window && !reduceMotion) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+        reveals.forEach(function (el) { observer.observe(el); });
+      } else {
+        // Фолбэк: показываем всё сразу
+        reveals.forEach(function (el) { el.classList.add('is-visible'); });
+      }
+
+      /* ---------- Актуальный год в футере ---------- */
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
